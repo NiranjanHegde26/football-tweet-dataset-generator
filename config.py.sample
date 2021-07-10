@@ -1,0 +1,10 @@
+APIKEY = '' #Paste your API Key
+APISECRETKEY = '' #Paste your API Secret Key
+BEARERTOKEN = '' #Paste your Bearer Token
+ACCESSTOKEN = '' #Paste your Access Token 
+ACCESSTOKENSECRET = '' #Paste your Access Token Secret
+
+CSV_FILE_NAME = 'football-tweets-dataset.csv' 
+COLS = ["ID","Text","Created At","Sentiment"]
+HASHTAGS = "" #Paste the hashtag. For multiple hashtags, follow the convention "#MUFC OR #MULIVE"
+COUNT = 300
