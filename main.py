@@ -1,3 +1,4 @@
+#!/home/code/football-tweet-dataset-generator/twitter/bin/python3
 """
 Encoding : UTF-8
 Author : Niranjana Hegde B S
@@ -7,12 +8,12 @@ Python Libraries Used : Tweepy, CSV, Pandas, VaderSentiment
 from config import ACCESSTOKEN , ACCESSTOKENSECRET, APIKEY, APISECRETKEY, CSV_FILE_NAME, COLS, HASHTAGS, COUNT
 from tweepy import OAuthHandler, API, Cursor
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from datetime import date, timedelta, datetime
 import pandas as pd
 from csv import writer, DictReader
 import os
 
-#Coonect to Twitter API
+
+#Conect to Twitter API
 auth = OAuthHandler(APIKEY, APISECRETKEY)   
 auth.set_access_token(ACCESSTOKEN, ACCESSTOKENSECRET)
 api = API(auth, wait_on_rate_limit=True)
@@ -122,11 +123,4 @@ def scrape_and_save():
             CSV = pd.DataFrame(columns = COLS).append(first_entry,ignore_index=True)
             CSV.to_csv(path_to_file,index=False)
 
-
 scrape_and_save()
-
-
-
-    
-    
-    

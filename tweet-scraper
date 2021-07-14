@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+PATH=~/code/football-tweet-dataset-generator
+
+# m h dom mon dow user command
+* /30 * * * root cd $P_PATH && source $P_PATH/twitter/bin/activate && $P_PATH/twitter/bin/python3 $P_PATH/main.py
