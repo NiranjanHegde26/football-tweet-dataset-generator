@@ -1,4 +1,3 @@
-#!/home/code/football-tweet-dataset-generator/twitter/bin/python3
 """
 Encoding : UTF-8
 Author : Niranjana Hegde B S
@@ -12,8 +11,7 @@ import pandas as pd
 from csv import writer, DictReader
 import os
 
-
-#Conect to Twitter API
+#Connect to Twitter API
 auth = OAuthHandler(APIKEY, APISECRETKEY)   
 auth.set_access_token(ACCESSTOKEN, ACCESSTOKENSECRET)
 api = API(auth, wait_on_rate_limit=True)
